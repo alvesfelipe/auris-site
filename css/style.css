@@ -14,8 +14,8 @@ body{
 
 .navbar-default{
 	height: au;
-  	background-color: #3094bc !important;
-  	border-color: #3094bc !important;
+  	background-color: #3094bc;
+  	border-color: #3094bc;
   	box-shadow: 0px 18px 29px 0 #00000070;
   	background-image: none;
 }
@@ -26,7 +26,7 @@ body{
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: white !important;
+    background-color: white;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -38,13 +38,18 @@ body{
 	font-stretch: normal;
 	letter-spacing: 1.8px;
 	text-align: left;
-	color: white !important;
+	color: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
   	padding-left: 70px;
   	padding-right: 30px;
 }
 
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #f5f800;
+    background-color: transparent;
+}
+
 .navbar {
-    border-radius: 0px !important;
+    border-radius: 0px;
 }
