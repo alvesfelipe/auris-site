@@ -1,0 +1,50 @@
+body{
+  background-color: #ffffff;
+}
+
+.logo-auris{
+	width: 152px;
+	height: 105px;
+	object-fit: contain;
+    display: block;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 12px;
+}
+
+.navbar-default{
+	height: au;
+  	background-color: #3094bc !important;
+  	border-color: #3094bc !important;
+  	box-shadow: 0px 18px 29px 0 #00000070;
+  	background-image: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #3094bc;
+    background-color: #3094bc;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white !important;
+}
+
+.navbar-default .navbar-nav>li>a{
+    font-family: Roboto;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 1.8px;
+	text-align: left;
+	color: white !important;
+	padding-top: 20px;
+	padding-bottom: 20px;
+  	padding-left: 70px;
+  	padding-right: 30px;
+}
+
+.navbar {
+    border-radius: 0px !important;
+}
