@@ -4,47 +4,58 @@
 	<title>Auris</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/mediaelementplayer.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-<img class="logo-auris" src="img/logo-sistema-auris/logo-sistema-a-u-r-i-s-transparente.png">
-<nav class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		    </button>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-nav-demo">
-			<ul class="nav navbar-nav">
-				<li id="proj"><a href="">Projeto</a></li>
-				<li id="exp"><a href="#">Experimentos</a></li>
-				<li><a href="#">Github</a></li>
-				<li><a href="#">Equipe</a></li>
-				<li><a href="#">Parceiros</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<div id="first-text">
-				<h3>veja o nosso vídeo </h3>
-				<h3>auris - música para surdos</h3>
+<section id="first-page">
+	<div id="head">
+		<img class="logo-auris" src="img/logo-sistema-auris/logo-sistema-a-u-r-i-s-transparente.png">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-nav-demo">
+					<ul class="nav navbar-nav">
+						<li><a href="">Projeto</a></li>
+						<li><a href="#">Experimentos</a></li>
+						<li><a href="#">Github</a></li>
+						<li><a href="#">Equipe</a></li>
+						<li><a href="#">Parceiros</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
+		</nav>
 	</div>
-</div>
+	
+	<div class="video">
+		<img id="video-present" src="img/home.png" data-video="https://www.youtube.com/embed/NsOnkL8hog0?autoplay=1&showinfo=0&controls=0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="first-text">
+						<h3>veja o nosso vídeo</h3>
+						<h2>auris - música para surdos</h2>
+					</div>
+				</div>
+			</div>
+		</div>					
+		<!-- <i class="fa fa-play-circle-o" aria-hidden="true"></i>	 -->
+	</div>
+</section>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/page_functions.js"></script>
+<script src="js/mediaelement-and-player.min.js"></script>
 </body>
 </html>

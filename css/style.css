@@ -1,12 +1,16 @@
-body{
+body {
   background-color: #ffffff;
 }
 
-header{
+html {
+	height: 100%;
+}
+
+header {
 	background-color: white;
 }
 
-.logo-auris{
+.logo-auris {
 	width: 152px;
 	height: 105px;
 	object-fit: contain;
@@ -14,60 +18,87 @@ header{
 	margin: auto;
 	padding-bottom: 20px;
 	padding-top: 12px;
+	top: 0;
+	background-color: white;
+	width: 100%;
+	z-index: 200;
 }
 
-/*Navbar Style*/
-.navbar-default{
+/*Head Style*/
+.navbar, .navbar-default {
 	height: auto;
   	background-color: #3094bc;
   	border-color: #3094bc;
   	box-shadow: 0px 18px 29px 0 rgba(0, 0, 0, 0.44);
   	background-image: none;
+  	z-index: 200;
 }
 
-@media (max-width: 1200px){
-	.navbar-header{
+#head {
+	width: 100%;
+	position: fixed;
+	z-index: 200;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: rgb(68, 210, 234);
+}
+
+@media (max-width: 1200px) {
+	.navbar-header {
 	    float: none;
 	}
-	.navbar-left,.navbar-right{
+	.navbar-left,.navbar-right {
 	    float: none !important;
 	}
-	.navbar-toggle{
+	.navbar-toggle {
 	    display: block;
 	}
-	.navbar-collapse{
+	.navbar-collapse {
 	    border-top: 1px solid transparent;
 	    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
 	}
-	.navbar-fixed-top{
+	.navbar-fixed-top {
 	    top: 0;
 	    border-width: 0 0 1px;
 	}
-	.navbar-collapse.collapse{
+	.navbar-collapse.collapse {
 	    display: none!important;
 	}
-	.navbar-nav{
+	.navbar-nav {
 	    float: none!important;
 	    margin-top: 7.5px;
 	}
-	.navbar-nav>li{
+	.navbar-nav>li {
 	    float: none;
 	}
-	.navbar-nav>li>a{
+	.navbar-nav>li>a {
 	    padding-top: 10px;
 	    padding-bottom: 10px;
 	}
-	.collapse.in{
+	.collapse.in {
 	    display:block !important;
+	}
+
+	.navbar, .navbar-default {
+		margin-bottom: 0;
 	}
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #3094bc;
     background-color: #3094bc;
 }
 
-.navbar-default .navbar-nav>li>a{
+.navbar-default .navbar-nav>li>a {
     font-family: Roboto;
 	text-transform: uppercase;
 	font-size: 75%;
@@ -83,32 +114,84 @@ header{
   	padding-right: 30px;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: #f5f800;
     background-color: transparent;
 }
 
-.navbar{
+.navbar {
     border-radius: 0px;
 }
-/*End Navbar Style*/
+
+.navbar, .navbar-default {
+	margin-bottom: 0;
+}
+/*End Head Style*/
 
 /*Firs Page Style*/
-#video{
-	z-index: -1;
-}
-
-#first-text{
-	font-family: Roboto;
+#first-text {
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	font-size: 10em;
 	font-style: normal;
 	font-stretch: normal;
 	text-align: center;
-	/*color: rgb(255, 255, 255);*/
-	color: black;
-	padding-top: 25%;
-	padding-left: 15%;
-	z-index: 1;
+	color: white;
 }
 
+#first-text h3 {
+	font-weight: 400;
+	font-weight: bold;
+	font-size: 3.5em;
+	position: relative;
+	margin: 0;
+	padding-top: 32%;
+	padding-left: 18%;
+	z-index: 40;
+}
+
+#first-text h2 {
+	font-weight: 100;
+	font-size: 3.5em;	
+	position: relative;
+	margin: 0;
+	padding-left: 6%;
+	z-index: 40;
+}
+
+.video {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 150px;
+}
+.video img {
+	position: absolute;
+	display: block;
+	width: 100%;
+	z-index: 20;
+	cursor: pointer;
+}
+.video:after {
+	content: "";
+	position: absolute;
+	display: block;
+	background: url(play-button.png) no-repeat 0 0;
+	top: 45%;
+	left: 45%;
+	width: 46px;
+	height: 36px;
+	z-index: 30;
+	cursor: pointer;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-width: 0px;
+}
+
+.fa fa-play-circle-o {
+	z-index: 40;
+}
