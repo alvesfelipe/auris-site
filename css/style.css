@@ -144,14 +144,14 @@ header {
 	text-align: center;
 	color: white;
 	text-align: right;
-	padding-top: 32%;
-	padding-right: 15%;
+	padding-top: 40vh;
+	padding-right: 15vw;
 }
 
 #first-text h3 {
 	font-weight: 400;
 	font-weight: bold;
-	font-size: 3.5em;
+	font-size: 6.5vw;
 	position: relative;
 	margin: 0;
 	z-index: 40;
@@ -159,7 +159,7 @@ header {
 
 #first-text h2 {
 	font-weight: 100;
-	font-size: 3.5em;	
+	font-size: 6.5vw;	
 	position: relative;
 	margin: 0;
 	z-index: 40;
