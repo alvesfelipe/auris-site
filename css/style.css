@@ -196,7 +196,7 @@ header {
 	content: "";
 	position: absolute;
 	display: block;
-	background: url(play-button.png) no-repeat 0 0;
+	/*background: url(play-button.png) no-repeat 0 0;*/
 	top: 45%;
 	left: 45%;
 	width: 46px;
