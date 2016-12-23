@@ -11,7 +11,7 @@ header {
 }
 
 #logo-auris {
-	width: 152px;
+	/*width: 152px;*/
 	height: 15vh;
 	object-fit: contain;
     display: block;
@@ -36,7 +36,7 @@ header {
 
 #head {
 	width: 100vw;
-	height: 50vw;
+	height: 30vw;
 	position: fixed;
 	z-index: 200;
 }
@@ -130,6 +130,12 @@ header {
 /*End Head Style*/
 
 /*Firs Page Style*/
+
+/*#first-page {
+	background-color: black;
+	background:url("../img/home.png");
+    background-size: cover;
+}*/
 #first-text {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
@@ -161,13 +167,17 @@ header {
 
 .video {
 	position: absolute;
-	height: 50vh;
+	height: 90vh;
 	width: 100%;
-	top: 17vh;
+	/*top: 17vh;*/
+	background:url("../img/home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .video img {
 	position: absolute;
 	display: block;
+	height: 50vw;
 	width: 100%;
 	z-index: 20;
 	cursor: pointer;
@@ -186,10 +196,10 @@ header {
 }
 .video iframe {
 	position: absolute;
-	top: 0;
+	top: 17vh;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 75vh;
 	border-width: 0px;
 }
 
@@ -221,6 +231,13 @@ header {
 }
 
 #play-presentation {
+	z-index: 40;
+	min-width: 100px;
+}
+
+#stop-presentation {
+	top: 75vh !important;
+	left: 5vw !important;
 	z-index: 40;
 }
 
