@@ -179,29 +179,27 @@ header {
 	position: absolute;
 	height: 90vh;
 	width: 100%;
-	/*top: 17vh;*/
 	background:url("../img/home.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.video img {
+/*.video img {
 	position: absolute;
 	display: block;
 	height: 50vw;
 	width: 100%;
 	z-index: 20;
 	cursor: pointer;
-}
+}*/
 .video:after {
 	content: "";
 	position: absolute;
 	display: block;
-	/*background: url(play-button.png) no-repeat 0 0;*/
 	top: 45%;
 	left: 45%;
 	width: 46px;
 	height: 36px;
-	z-index: 30;
+	/*z-index: 30;*/
 	cursor: pointer;
 }
 .video iframe {
@@ -215,7 +213,6 @@ header {
 
 .btn-group-lg>.btn, .btn-lg{
 	position: relative;
-	z-index: 40;
 	border-radius:0px;
 }
 
@@ -224,7 +221,7 @@ header {
 	border: solid 3px rgb(3, 47, 62);
 }
 
-.blackiconcolor {
+.iconcolor {
     color: white;
 }
 
@@ -234,21 +231,28 @@ header {
     border: solid 1px rgb(255, 255, 255);
 }
 
-.btn-block {
+/*.btn-block {
     width: 18%;
     float: right;
     top: 2vh;
-}
+}*/
 
 #play-presentation {
-	z-index: 40;
-	min-width: 100px;
+	min-width: 18%;
+	width: 18%;
+	float: right;
+    top: 2vh;
 }
 
 #stop-presentation {
-	top: 75vh !important;
-	left: 5vw !important;
-	z-index: 40;
+	width: 18%;
+	min-width: 18%;
+	position: relative;
+    top: 40vh;
+    left: 20vw;
+    font-size: 4em;
+    float: right;
+    right: -18vw;
 }
 
 /*#first-page {
