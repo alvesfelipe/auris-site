@@ -131,42 +131,44 @@ header {
 
 /*General Section Style*/
 .general-style{
-	height: 90vh;
 	width: 100%;
 }
 /*End General Section Style*/
 
 /*Firs Page Style*/
-#first-text {
+.title-text {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	font-style: normal;
 	font-stretch: normal;
-	text-align: center;
 	color: white;
-	text-align: right;
+}
+
+#first-text {
 	padding-top: 40vh;
 	padding-right: 15vw;
 }
 
 #first-text h3 {
-	font-weight: 400;
+	/*font-weight: 400;*/
+	text-align: right;
 	font-weight: bold;
-	font-size: 6.5vw;
+	font-size: 4.5vw;
 	position: relative;
 	margin: 0;
 	z-index: 40;
 }
 
 #first-text h2 {
+	text-align: right;
 	font-weight: 100;
-	font-size: 6.5vw;	
+	font-size: 4.5vw;	
 	position: relative;
 	margin: 0;
 	z-index: 40;
 }
 
-@media (min-width: 880px) {
+/*@media (min-width: 880px) {
 	#first-text h3 {
 		font-size: 4.5vw;
 	}
@@ -174,13 +176,14 @@ header {
 	#first-text h2 {
 		font-size: 4.5vw;	
 	}
-}
+}*/
 
 .video {
 	position: absolute;
 	background:url("../img/home.png");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 90vh;
 }
 /*.video img {
 	position: absolute;
@@ -230,7 +233,7 @@ header {
 }
 
 #play-presentation {
-	min-width: 18%;
+	min-width: 15vw;
 	width: 18%;
 	float: right;
     top: 2vh;
@@ -238,7 +241,7 @@ header {
 
 #stop-presentation {
 	width: 18%;
-	min-width: 18%;
+	min-width: 15vw;
 	position: relative;
     top: 40vh;
     left: 20vw;
@@ -252,10 +255,12 @@ header {
 #second-page {
 	position: absolute;
 	border: transparent;
-	margin-top: 95vh;
+	margin-top: 90vh;
+	margin-bottom: 10vh;
 }
 
 #head-second {
+	padding-top: 10vh;
 	border: transparent;
     margin-left: 16vw;
     margin-right: 16vw;
@@ -275,7 +280,7 @@ header {
 }
 
 #head-second p {
-
+	font-size: 1.3vw;
 	text-align: center;
 }
 
@@ -299,13 +304,13 @@ header {
 }
 
 #artefacts h2{
-	font-size: 1.5vw;
+	font-size: 1.7vw;
 	text-transform: uppercase;
 	color: rgb(48, 148, 188);
 }
 
 #artefacts p {
-	font-size: 1vw;
+	font-size: 1.2vw;
 }
 
 #artefacts .container {
@@ -343,6 +348,41 @@ header {
     z-index: -1;
 }
 /*End Second Page Style*/
+
+/*Third Page Style*/
+#third-page {
+	position: absolute;
+	border: transparent;
+	height: 90vh;
+	margin-top: 210vh;
+	background-color: rgb(48, 148, 188);
+}
+
+#second-text {
+	padding-left: 39vw;
+	padding-top: 10vh;
+}
+
+#second-text h3 {
+	/*font-weight: 400;*/
+	text-align: left;
+	font-weight: bold;
+	font-size: 4.5vw;
+	position: relative;
+	margin: 0;
+	z-index: 40;
+}
+
+#second-text h2 {
+	text-align: left;
+	font-weight: 100;
+	font-size: 4.5vw;	
+	position: relative;
+	margin: 0;
+	z-index: 40;
+}
+/*End Third Page Style*/
+
 
 
 
