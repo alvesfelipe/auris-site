@@ -12,10 +12,14 @@ $('body').on('click', '#stop-presentation', function(){
     location.href = 'http://192.168.0.8:8080';
 });
 
+var i = 0;
+var sections = [($('#first-page').height() - $('#head').height()), 
+                ((parseInt($("#third-page").css("margin-top")) + $("#third-page").height()) - $('#head').height())
+                ];
+
 $('#scroll-down').click(function () {
-    $('html, body').animate({scrollTop:$('#first-page').height() - $('#head').height()}, 'slow');
-    // $('html, body').animate({scrollTop:($('#third-page').height() - $('#head').height())}, 'slow');
-    // window.alert($('.video').height());
-    // window.alert($('#head').height());
+    // alert($("#third-page").css("margin-top"));   
+    $('html, body').animate({scrollTop: sections[i]}, 'slow');
+    i++;
     return false;
 });
