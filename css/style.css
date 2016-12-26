@@ -42,7 +42,7 @@ header {
 
 #head {
 	width: 100vw;
-	height: 30vw;
+	height: auto;
 	position: fixed;
 	z-index: 200;
 }
@@ -131,6 +131,39 @@ header {
 }
 /*End Head Style*/
 
+/*Scroll Down Button Style*/
+#scroll-down {
+	position: fixed;
+	height: 80px;
+    width: 80px;
+    font-size: 25px;
+    z-index: 400;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: rgb(48, 148, 188);
+    box-shadow: 0 14px 59px -7px rgba(0,0,0,0.85);
+    bottom: 5vh;
+    right: 5vw;
+}
+
+#scroll-down:hover {
+	background-color: rgb(81, 183, 224);;
+}
+
+#scroll-down:focus {
+	outline: 0px;	
+}
+
+@media (max-width: 777px) {
+	#scroll-down{
+		height: 40px;
+    	width: 40px;
+    	font-size: 17px;
+		box-shadow: 0 14px 44px -5px rgba(0,0,0,0.85);
+	}    
+}
+/*End Scroll Down Button Style*/
+
 /*General Section Style*/
 .general-style{
 	width: 100%;
@@ -138,6 +171,10 @@ header {
 /*End General Section Style*/
 
 /*Firs Page Style*/
+#first-page {
+	height: 90vh;
+}
+
 .title-text {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
@@ -214,7 +251,7 @@ header {
 	border-width: 0px;
 }
 
-.btn-group-lg>.btn, .btn-lg{
+.btn-group-lg>.btn, .btn-lg {
 	position: relative;
 	border-radius:0px;
 }
@@ -228,8 +265,8 @@ header {
     color: white;
 }
 
-.btn-default:hover{
-	background-color: rgb(48, 148, 188);
+.btn-default:hover {
+	background-color: rgb(4, 87, 115);
 	border-color: white;
     border: solid 1px rgb(255, 255, 255);
 }
@@ -257,8 +294,9 @@ header {
 #second-page {
 	position: absolute;
 	border: transparent;
-	margin-top: 90vh;
-	margin-bottom: 10vh;
+	height: 110vh;
+	/*margin-top: 90vh;*/
+	/*margin-bottom: 10vh;*/
 }
 
 #head-second {
@@ -356,7 +394,7 @@ header {
 	position: absolute;
 	border: transparent;
 	height: 90vh;
-	margin-top: 210vh;
+	margin-top: 110vh;
 	background-color: rgb(48, 148, 188);
 }
 
