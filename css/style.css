@@ -272,21 +272,33 @@ header {
 }
 
 #play-presentation {
-	min-width: 15vw;
-	width: 18%;
+	max-width: 160px;
+	max-height: 95px;
 	float: right;
     top: 2vh;
 }
 
 #stop-presentation {
-	width: 18%;
-	min-width: 15vw;
+	max-width: 160px;
+	max-height: 95px;
 	position: relative;
-    top: 40vh;
+    top: 35vh;
     left: 13vw;
     font-size: 4em;
     float: right;
     right: -18vw;
+}
+
+@media (max-width: 777px) {
+	#play-presentation {
+		width: 120px;
+    	height: 95px;
+	}
+
+	#stop-presentation {
+		width: 120px;
+    	height: 95px;
+	}
 }
 /*End Firs Page Style*/
 
