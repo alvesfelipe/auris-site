@@ -1,9 +1,14 @@
 body {
   background-color: #ffffff;
+  width: 100vw;
 }
 
 html {
 	height: 100%;
+}
+
+html, body {
+	overflow-x: hidden;
 }
 
 header {
@@ -11,7 +16,6 @@ header {
 }
 
 #logo-auris {
-	/*width: 152px;*/
 	height: 15vh;
 	object-fit: contain;
     display: block;
@@ -32,6 +36,8 @@ header {
   	box-shadow: 0px 18px 29px 0 rgba(0, 0, 0, 0.44);
   	background-image: none;
   	z-index: 200;
+  	margin-bottom: 0;
+  	width: 100vw !important;
 }
 
 #head {
@@ -122,10 +128,6 @@ header {
 
 .navbar {
     border-radius: 0px;
-}
-
-.navbar, .navbar-default {
-	margin-bottom: 0;
 }
 /*End Head Style*/
 
@@ -244,7 +246,7 @@ header {
 	min-width: 15vw;
 	position: relative;
     top: 40vh;
-    left: 20vw;
+    left: 13vw;
     font-size: 4em;
     float: right;
     right: -18vw;
