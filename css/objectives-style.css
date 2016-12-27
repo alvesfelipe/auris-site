@@ -1,0 +1,72 @@
+#objectives-auris {
+	position: relative;
+	background-color: rgb(48, 148, 188);
+}
+
+#second-text {
+	padding-left: 39vw;
+	padding-top: 10vh;
+}
+
+#second-text h1 {
+	/*font-weight: 400;*/
+	text-align: left;
+	font-weight: bold;
+	font-size: 4.5vw;
+	position: relative;
+	margin: 0;
+}
+
+#second-text h2 {
+	text-align: left;
+	font-weight: 100;
+	font-size: 4.5vw;	
+	position: relative;
+	margin: 0;
+}
+
+#objectives {
+	border: transparent;
+	margin-top: 8vh;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    height: auto;
+    padding-bottom: 1px;
+}
+
+#objectives i {
+	position: absolute;
+	font-size: 4em;
+}
+
+#objectives p {
+	font-family: Roboto;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+	text-align: left;
+	color: rgb(255, 255, 255);
+	height: 4vh;
+    padding-left: 9vw;
+}
+
+.obj {
+	border: transparent;
+    margin-left: 2vw;
+    /*margin-bottom: 2vh;*/
+    min-height: 70px;
+}
+
+.vr {
+	height: 8vh;
+	min-height: 80px;
+    margin-bottom: 2vh;
+    width: 1.5px;
+    background-color: rgba(255,255,255,0.9);
+    position: relative;
+    left: 4vw;
+}
+
+#last-obj {
+	margin-bottom: 10vh;
+}
