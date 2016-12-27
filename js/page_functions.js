@@ -14,12 +14,17 @@ $('body').on('click', '#stop-presentation', function(){
 
 var i = 0;
 var sections = [($('#first-page').height() - $('#head').height()), 
-                ((parseInt($("#third-page").css("margin-top")) + $("#third-page").height()) - $('#head').height())
+                ($('#second-page').height())
                 ];
 
 $('#scroll-down').click(function () {
-    // alert($("#third-page").css("margin-top"));   
-    $('html, body').animate({scrollTop: sections[i]}, 'slow');
+    
+    if ((sections[i-1]) != null) { 
+        $('html, body').animate({scrollTop: sections[i] + sections[i-1]}, 'slow');
+    }else{
+        $('html, body').animate({scrollTop: sections[i]}, 'slow');
+    }
+    
     i++;
     return false;
 });
