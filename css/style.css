@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff;
-  width: 100vw;
+  width: 100%;
 }
 
 html {
@@ -17,6 +17,8 @@ header {
 
 #logo-auris {
 	height: 15vh;
+	max-height: 150px;
+    min-height: 120px;
 	object-fit: contain;
     display: block;
 	margin: auto;
@@ -30,7 +32,7 @@ header {
 
 /*Head Style*/
 .navbar, .navbar-default {
-	height: auto;
+	/*height: auto;*/
   	background-color: #3094bc;
   	border-color: #3094bc;
   	box-shadow: 0px 18px 29px 0 rgba(0, 0, 0, 0.44);
@@ -53,6 +55,7 @@ header {
 
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: white;
+	width: auto;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
@@ -68,6 +71,8 @@ header {
 	}
 	.navbar-toggle {
 	    display: block;
+	    height: 50px;
+    	width: 50px;
 	}
 	.navbar-collapse {
 	    border-top: 1px solid transparent;
@@ -98,6 +103,10 @@ header {
 	.navbar, .navbar-default {
 		margin-bottom: 0;
 	}
+
+	.navbar{
+		min-height: 70px;
+	}
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -108,7 +117,7 @@ header {
 .navbar-default .navbar-nav>li>a {
     font-family: Roboto;
 	text-transform: uppercase;
-	font-size: 75%;
+    font-size: 15px;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
@@ -168,6 +177,12 @@ header {
 .general-style{
 	width: 100%;
 }
+
+@media (max-width: 777px) {
+	body p{
+    	font-size: 30px;
+	}    
+}
 /*End General Section Style*/
 
 /*Firs Page Style*/
@@ -188,7 +203,7 @@ header {
 	padding-right: 15vw;
 }
 
-#first-text h3 {
+#first-text h1 {
 	/*font-weight: 400;*/
 	text-align: right;
 	font-weight: bold;
@@ -207,16 +222,6 @@ header {
 	z-index: 40;
 }
 
-/*@media (min-width: 880px) {
-	#first-text h3 {
-		font-size: 4.5vw;
-	}
-
-	#first-text h2 {
-		font-size: 4.5vw;	
-	}
-}*/
-
 .video {
 	position: absolute;
 	background:url("../img/home.png");
@@ -224,14 +229,7 @@ header {
     background-repeat: no-repeat;
     height: 90vh;
 }
-/*.video img {
-	position: absolute;
-	display: block;
-	height: 50vw;
-	width: 100%;
-	z-index: 20;
-	cursor: pointer;
-}*/
+
 .video:after {
 	content: "";
 	position: absolute;
@@ -304,11 +302,9 @@ header {
 
 /*Second Page Style*/
 #second-page {
-	position: absolute;
+	/*position: relative;*/
 	border: transparent;
-	height: 110vh;
-	/*margin-top: 90vh;*/
-	/*margin-bottom: 10vh;*/
+	height: auto;
 }
 
 #head-second {
@@ -318,12 +314,12 @@ header {
     margin-right: 16vw;
 }
 
-#head-second h1{
+#head-second h3{
 	font-family: Roboto;
 	color: rgb(48, 148, 188);
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 2vw;
+	font-size: 26px;
 }
 
 #head-second hr {
@@ -332,15 +328,18 @@ header {
 }
 
 #head-second p {
-	font-size: 1.3vw;
+	/*font-size: 16px;*/
+	font-size: 120%;
 	text-align: center;
 }
 
 .art {
 	border: transparent;
-	margin-top: 2vh;
+	/*margin-top: 2vh;*/
     margin-left: 2vw;
-    margin-bottom: 11vh;
+    min-height: 200px;
+    padding-bottom: 7vh;
+    padding-top: 2vh;
 }
 
 #artefacts {
@@ -355,22 +354,17 @@ header {
 	margin-left: 32vw;
 }
 
-#artefacts h2{
-	font-size: 1.7vw;
+#artefacts h4{
+	font-size: 18px;
 	text-transform: uppercase;
 	color: rgb(48, 148, 188);
 }
 
 #artefacts p {
-	font-size: 1.2vw;
-}
-
-#artefacts .container {
-	position: relative;
+	font-size: 16px;
 }
 
 #artefacts .icon {
-	margin-top: 10vh;
 	margin-left: 16vw;
 }
 
@@ -403,10 +397,9 @@ header {
 
 /*Third Page Style*/
 #third-page {
-	position: absolute;
+	position: relative;
 	border: transparent;
-	height: 90vh;
-	margin-top: 120vh;
+	height: auto;
 	background-color: rgb(48, 148, 188);
 }
 
@@ -415,14 +408,13 @@ header {
 	padding-top: 10vh;
 }
 
-#second-text h3 {
+#second-text h1 {
 	/*font-weight: 400;*/
 	text-align: left;
 	font-weight: bold;
 	font-size: 4.5vw;
 	position: relative;
 	margin: 0;
-	z-index: 40;
 }
 
 #second-text h2 {
@@ -431,7 +423,38 @@ header {
 	font-size: 4.5vw;	
 	position: relative;
 	margin: 0;
-	z-index: 40;
+}
+
+#objectives {
+	border: transparent;
+	margin-top: 8vh;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    height: auto;
+    padding-bottom: 1px;
+}
+
+#objectives i {
+	position: absolute;
+	font-size: 4em;
+}
+
+#objectives p {
+	font-family: Roboto;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+	text-align: left;
+	color: rgb(255, 255, 255);
+	height: 4vh;
+    padding-left: 9vw;
+}
+
+.obj {
+	border: transparent;
+    margin-left: 2vw;
+    margin-bottom: 11vh;
+    min-height: 90px;
 }
 /*End Third Page Style*/
 
