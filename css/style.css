@@ -178,10 +178,22 @@ header {
 	width: 100%;
 }
 
-@media (max-width: 777px) {
-	body p{
-    	font-size: 30px;
-	}    
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+	body p {
+    	font-size: 30px !important;
+	}
+
+	body h1, h2 {
+		font-size: 55px !important;
+	}
+
+	body h3 {
+		font-size: 45px !important;
+	}
+
+	body h4 {
+		font-size: 35px !important;
+	}     
 }
 /*End General Section Style*/
 
@@ -199,8 +211,11 @@ header {
 }
 
 #first-text {
-	padding-top: 40vh;
-	padding-right: 15vw;
+	border: transparent;
+    min-height: 250px;
+    margin-top: 40vh;
+    margin-bottom: 20vh;
+    padding-right: 15vw;
 }
 
 #first-text h1 {
@@ -328,8 +343,7 @@ header {
 }
 
 #head-second p {
-	/*font-size: 16px;*/
-	font-size: 120%;
+	font-size: 16px;
 	text-align: center;
 }
 
