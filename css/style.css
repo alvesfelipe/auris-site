@@ -179,6 +179,7 @@ header {
 }
 
 @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+	/*Body elements*/
 	body p {
     	font-size: 30px !important;
 	}
@@ -193,7 +194,39 @@ header {
 
 	body h4 {
 		font-size: 35px !important;
-	}     
+	}
+
+	/*Fixed elements*/
+	#scroll-down {
+		height: 150px;
+		width: 150px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+    	font-size: 30px;
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+	}
+
+	.navbar, .navbar-default {
+    	margin-bottom: 0;
+    	height: 120px;
+	}
+
+	.navbar-toggle {
+    	height: 90px;
+    	width: 90px;
+    	margin-top: 14px;
+    	margin-right: 40px;
+	}
+
+	#head .container {
+		padding-right: 0; 
+    	padding-left: 0; 
+    	margin-right: 0;
+    	margin-left: 0;
+    	width: 100% !important;
+	}
 }
 /*End General Section Style*/
 
