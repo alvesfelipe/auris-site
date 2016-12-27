@@ -13,8 +13,8 @@ $('body').on('click', '#stop-presentation', function(){
 });
 
 var i = 0;
-var sections = [($('#first-page').height() - $('#head').height()), 
-                ($('#second-page').height())
+var sections = [($('#home').height() - $('#head').height()), 
+                ($('#description').height())
                 ];
 
 $('#scroll-down').click(function () {
@@ -24,7 +24,7 @@ $('#scroll-down').click(function () {
     }else{
         $('html, body').animate({scrollTop: sections[i]}, 'slow');
     }
-    
+
     i++;
     return false;
 });

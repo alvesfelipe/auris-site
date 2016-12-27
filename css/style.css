@@ -117,7 +117,7 @@ header {
 .navbar-default .navbar-nav>li>a {
     font-family: Roboto;
 	text-transform: uppercase;
-    font-size: 15px;
+    font-size: 13px;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
@@ -176,6 +176,8 @@ header {
 /*General Section Style*/
 .general-style{
 	width: 100%;
+	height: auto;
+	border: transparent;
 }
 
 @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -231,7 +233,7 @@ header {
 /*End General Section Style*/
 
 /*Firs Page Style*/
-#first-page {
+#home {
 	height: 90vh;
 }
 
@@ -349,10 +351,9 @@ header {
 /*End Firs Page Style*/
 
 /*Second Page Style*/
-#second-page {
+#description {
 	/*position: relative;*/
 	border: transparent;
-	height: auto;
 }
 
 #head-second {
@@ -443,10 +444,8 @@ header {
 /*End Second Page Style*/
 
 /*Third Page Style*/
-#third-page {
+#objectives-auris {
 	position: relative;
-	border: transparent;
-	height: auto;
 	background-color: rgb(48, 148, 188);
 }
 
@@ -504,6 +503,8 @@ header {
     min-height: 90px;
 }
 /*End Third Page Style*/
+
+/**/
 
 
 
