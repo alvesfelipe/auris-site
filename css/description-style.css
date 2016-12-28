@@ -3,31 +3,6 @@
 	border: transparent;
 }
 
-#head-second {
-	padding-top: 10vh;
-	border: transparent;
-    margin-left: 16vw;
-    margin-right: 16vw;
-}
-
-#head-second h3{
-	font-family: Roboto;
-	color: rgb(48, 148, 188);
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 26px;
-}
-
-#head-second hr {
-	width: 3vw;
-	border-bottom: 1px solid rgb(171, 152, 122);
-}
-
-#head-second p {
-	font-size: 16px;
-	text-align: center;
-}
-
 .art {
 	border: transparent;
 	/*margin-top: 2vh;*/
@@ -42,21 +17,12 @@
 	margin-top: 8vh;
     margin-left: -2vw;
     margin-right: 16vw;
+    padding-bottom: 4vh;
 }
 
 #artefacts .text {
 	border: transparent;
 	margin-left: 32vw;
-}
-
-#artefacts h4{
-	font-size: 18px;
-	text-transform: uppercase;
-	color: rgb(48, 148, 188);
-}
-
-#artefacts p {
-	font-size: 16px;
 }
 
 #artefacts .icon {

@@ -40,6 +40,7 @@
 }
 
 #objectives p {
+	border: transparent;
 	font-family: Roboto;
 	font-weight: bold;
 	font-style: normal;
@@ -47,7 +48,7 @@
 	text-align: left;
 	color: rgb(255, 255, 255);
 	height: 4vh;
-    padding-left: 9vw;
+    margin-left: 9vw;
 }
 
 .obj {

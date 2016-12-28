@@ -1,0 +1,74 @@
+#experiments-carousel {
+    margin-top: 7vh;
+    padding-bottom: 10vh;
+    padding-right: 0;
+}
+
+.icon {
+    margin-top: 20px;
+}
+
+/* Carousel Styles */
+.carousel-indicators .active {
+    background-color: #2980b9;
+}
+
+.carousel-inner img {
+    width: 60%;
+    max-height: 460px
+}
+
+/* Carousel Header Styles */
+.header-text {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: auto;
+    width: 40%;
+    background-color: white;
+    height: auto;
+}
+
+.text-carrousel {
+    border: transparent;
+    padding: 10px
+}
+
+.text-carrousel p {
+    margin-top: 10px;
+    text-align: left;
+    float: left;
+}
+
+.text-carrousel hr {
+    width: 3vw;
+    border-bottom: 1px solid rgb(171, 152, 122);
+    float: left;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+ol, ul {
+    /* margin-top: 0; */
+    margin-bottom: -51px;
+}
+
+.carousel-indicators li {
+    border: 1px solid rgb(171, 152, 122);
+}
