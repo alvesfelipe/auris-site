@@ -72,3 +72,7 @@ ol, ul {
 .carousel-indicators li {
     border: 1px solid rgb(171, 152, 122);
 }
+
+.carousel .item {
+  height: 350px;
+}
