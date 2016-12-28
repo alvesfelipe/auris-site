@@ -40,6 +40,10 @@ header {
 		font-size: 35px !important;
 	}
 
+	#github h4 {
+		font-size: 25px !important;
+	}
+
 	/*Fixed elements*/
 	#scroll-down {
 		height: 150px !important;

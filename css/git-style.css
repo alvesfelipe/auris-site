@@ -1,0 +1,46 @@
+#github {
+	background-color: rgb(52, 127, 153);
+	position: relative;
+	height: auto;
+}
+
+#github img {
+	margin: 5vw;
+    width: 10vw;
+    min-width: 110px;
+    height: auto;
+}
+
+#github h4 {
+	border: transparent;
+	font-family: Roboto;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: white;
+	position: absolute;
+	top: 0;
+}
+
+#git{
+	font-weight: bold !important;
+}
+
+#github h4 {
+	margin-top: 8vw;
+    margin-left: 21vw;
+}
+
+#github button {
+	margin: 7vw;
+	margin-right: 17vw;
+	padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+    background-color: rgb(52, 127, 153);
+    border: solid 3px rgb(3, 47, 62);
+    font-family: Roboto;
+  	font-size: 18px;
+	font-weight: bold;
+	color: rgb(3, 47, 62);
+}
