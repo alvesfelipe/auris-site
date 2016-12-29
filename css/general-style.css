@@ -102,6 +102,7 @@ header {
 .headers p {
 	font-size: 16px;
 	text-align: center;
+	color: rgb(97, 97, 97);
 }
 /*End Headers general style*/
 
@@ -119,6 +120,7 @@ header {
 
 .text p {
 	font-size: 16px;
+	color: rgb(97, 97, 97);
 }
 
 /*End Body texts*/
