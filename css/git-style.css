@@ -19,15 +19,13 @@
 	color: white;
 	position: absolute;
 	top: 0;
+	margin-top: 8vw;
+    margin-left: 21vw;
+    width: 21vw;
 }
 
 #git{
 	font-weight: bold !important;
-}
-
-#github h4 {
-	margin-top: 8vw;
-    margin-left: 21vw;
 }
 
 #github button {
@@ -43,4 +41,5 @@
   	font-size: 18px;
 	font-weight: bold;
 	color: rgb(3, 47, 62);
+	width: 27vw;
 }
