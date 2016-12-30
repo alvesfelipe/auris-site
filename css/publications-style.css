@@ -1,0 +1,63 @@
+#publications {
+	background-color: rgba(97, 97, 97, 0.14);
+}
+
+#publications .carousel-inner img {
+    width: 40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    min-height: 168px;
+    border-right: solid 2px rgb(48, 148, 188);
+}
+
+#publications .header-text {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    right: auto;
+    width: 60%;
+}
+
+#publications .carousel-indicators {
+	bottom: 0vh;
+}
+
+#publications .row {
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 10vh;
+}
+
+#publications .carousel .item {
+	background-color: white;
+}
+
+#publications button {
+	float: right;
+	margin-right: 30%;
+    margin-top: 10%;
+    background-color: white;
+    border: solid 2px rgb(48, 148, 188);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(48, 148, 188);
+    width: 14vw;
+}
+
+#publications .carousel .item {
+    height: auto;
+}
+
+#publications .text-carrousel {
+    padding-bottom: 50px;
+}
+
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    #publications .carousel-inner img {
+        width: 40%;
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+}
