@@ -1,0 +1,65 @@
+#contact {
+	background-color: rgb(22, 96, 121);
+}
+
+#contact-elements p {
+	color: white;
+}
+
+#contact-elements a {
+	font-family: Roboto;
+	color: white;
+}
+
+#contact-elements h4 {
+	color: white;
+}
+
+#auris-about {
+	border: transparent;
+	float: left;
+	width: 25vw;
+	padding: 2vw;
+}
+
+#auris-about p {
+	padding-top: 2vh;
+}
+
+#auris-cont {
+	border: transparent;
+	float: left;
+	width: 25vw;
+	padding: 2vw;
+}
+
+#auris-cont address {
+	float: left;
+}
+
+.cont hr {
+	float: left;
+	width: 1.5vw;
+	margin-right: 18.5vw;
+	border-color: 1px solid rgb(171, 152, 122);
+}
+
+.cont h4 {
+	text-transform: uppercase;
+}
+
+#auris-social {
+	border: transparent;
+	float: left;
+	width: 25vw;
+	padding: 2vw;
+}
+
+#auris-social i {
+	font-size: 4em;
+}
+
+#contact .row {
+	padding-top: 0;
+	padding: 5vw;
+}
