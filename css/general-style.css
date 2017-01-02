@@ -114,6 +114,7 @@ header {
 }
 
 .text h4{
+	font-weight: bold;
 	font-size: 18px;
 	text-transform: uppercase;
 	color: rgb(48, 148, 188);

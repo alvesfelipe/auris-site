@@ -30,7 +30,7 @@
 }
 
 #publications .carousel .item {
-	background-color: white;
+	background-color: rgb(52, 127, 153);
 }
 
 #publications button {
@@ -51,7 +51,7 @@
 }
 
 #publications .text-carrousel {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
