@@ -83,6 +83,7 @@ header {
 .headers {
 	font-family: Roboto;
 	padding-top: 10vh;
+	padding-bottom: 5vh;
 	border: transparent;
     margin-left: 16vw;
     margin-right: 16vw;

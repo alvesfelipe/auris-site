@@ -1,0 +1,12 @@
+#partners .row {
+	margin: 0;
+	padding: 10vw;
+	padding-top: 0;
+	padding-bottom: 5vw;
+}
+
+.partner-img {
+	float: left;
+	padding: 2vh;
+	height: auto;
+}
