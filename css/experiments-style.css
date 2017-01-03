@@ -35,7 +35,7 @@
 }
 
 .text-carrousel p {
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: left;
     float: left;
 }
@@ -43,7 +43,7 @@
 .text-carrousel hr {
     width: 3vw;
     border-bottom: 1px solid rgb(171, 152, 122);
-    float: left;
+    margin: 0;
 }
 
 .btn-min-block {
