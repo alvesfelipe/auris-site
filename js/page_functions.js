@@ -29,11 +29,9 @@ $('#scroll-down').click(function () {
     
     if ((sections[i-1]) != null && sections[i] != null) {
         sec_sum += sections[i];
-        alert(sec_sum);
         $('html, body').animate({scrollTop: sec_sum}, 'slow');
     }else{
         sec_sum = sections[i];
-        alert(sec_sum);
         $('html, body').animate({scrollTop: sections[i]}, 'slow');
     }
 
@@ -54,7 +52,12 @@ function summ(i) {
 }
 
 function project(id) {
-    $('html, body').animate({scrollTop: sections[0]}, 'slow');
+    $('html, body').animate({scrollTop: summ(0)}, 'slow');
+    return false;
+}
+
+function objectives(id) {
+    $('html, body').animate({scrollTop: summ(1)}, 'slow');
     return false;
 }
 
@@ -71,6 +74,11 @@ function git(id) {
 
 function team(id) {
     $('html, body').animate({scrollTop: summ(4)}, 'slow');
+    return false;
+}
+
+function publications(id) {
+    $('html, body').animate({scrollTop: summ(5)}, 'slow');
     return false;
 }
 

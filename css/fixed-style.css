@@ -109,8 +109,20 @@
 	color: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
-  	padding-left: 70px;
+  	padding-left: 30px;
   	padding-right: 30px;
+}
+
+.navbar ul {
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    border: transparent;
+    display:table;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: 0;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
