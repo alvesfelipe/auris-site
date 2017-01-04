@@ -4,23 +4,44 @@
 }
 
 #second-text {
-	padding-left: 39vw;
+	/*padding-left: 39vw;*/
 	padding-top: 10vh;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
 #second-text h1 {
 	text-align: left;
-	font-size: 4.5vw;
 	position: relative;
 	margin: 0;
 }
 
 #second-text h2 {
 	text-align: left;
-	font-weight: 100;
-	font-size: 4.5vw;	
+	font-weight: 100;	
 	position: relative;
 	margin: 0;
+}
+
+@media(min-width:576px){
+	#objectives-auris #second-text h1, h2 {
+		font-size: 3em;
+	}
+}
+
+@media (min-width: 768px) {
+	#objectives-auris #second-text h1, h2 {
+		font-size: 3.5em;
+	}
+}
+
+@media (min-width: 992px) {
+	#objectives-auris #second-text h1, h2 {
+		font-size: 4em;
+	}
 }
 
 #objectives {
