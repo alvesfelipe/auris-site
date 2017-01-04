@@ -9,7 +9,7 @@ $('#play-presentation').click(function(){
 });
 
 $('body').on('click', '#stop-presentation', function(){
-    location.href = 'http://192.168.0.8:8080';
+    location.href = 'https://alvesfelipe.github.io/auris-site/';
 });
 
 var i = 0, sec_sum = 0;
