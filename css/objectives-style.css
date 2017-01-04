@@ -11,7 +11,6 @@
 #second-text h1 {
 	/*font-weight: 400;*/
 	text-align: left;
-	font-weight: bold;
 	font-size: 4.5vw;
 	position: relative;
 	margin: 0;
@@ -42,7 +41,6 @@
 #objectives p {
 	border: transparent;
 	font-family: Roboto;
-	font-weight: bold;
 	font-style: normal;
 	font-size: 18px;
 	text-align: left;
