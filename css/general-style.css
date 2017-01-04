@@ -102,7 +102,7 @@ header {
 }
 
 .headers p {
-	font-size: 16px;
+	font-size: 20px;
 	text-align: center;
 	color: rgb(97, 97, 97);
 }
@@ -116,13 +116,13 @@ header {
 
 .text h4{
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 22px;
 	text-transform: uppercase;
 	color: rgb(48, 148, 188);
 }
 
 .text p {
-	font-size: 16px;
+	font-size: 20px;
 	color: rgb(97, 97, 97);
 }
 
