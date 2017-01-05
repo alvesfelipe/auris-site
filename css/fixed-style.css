@@ -16,9 +16,9 @@
 .navbar, .navbar-default {
   	background-color: #3094bc;
   	border-color: #3094bc;
-	-webkit-box-shadow: -10px 11px 9px -4px rgba(0,0,0,0.75);
-	-moz-box-shadow: -10px 11px 9px -4px rgba(0,0,0,0.75);
-	box-shadow: -10px 11px 9px -4px rgba(0,0,0,0.75);
+  	-webkit-box-shadow: 0px 12px 9px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 9px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 12px 9px -4px rgba(0,0,0,0.75);
 	margin-bottom: 0;
 }
 
@@ -37,6 +37,8 @@
 
 .navbar-default .navbar-toggle {
 	border-color: white;
+	position: fixed;
+    right: 1vw;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -47,6 +49,14 @@
 
 .navbar-toggle .icon-bar+.icon-bar {
     margin-top: 6px;
+}
+
+.navbar-collapse .collapse {
+	overflow: hidden !important;
+}
+
+.navbar-collapse {
+	overflow-x: hidden !important;
 }
 
 @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -61,6 +71,76 @@
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
 	background-color: rgb(68, 210, 234);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #3094bc;
+    background-color: #3094bc;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: Roboto;
+	text-transform: uppercase;
+    font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 1.8px;
+	color: white;
+	padding: 20px 30px;
+	width: 93%;
+}
+
+.navbar ul {
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    border: transparent;
+    display:table;
+    overflow: hidden;
+    width: 96vw;
+    margin-left: 0;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #f5f800;
+    background-color: transparent;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+/*End Head Style*/
+
+/*Scroll Down Button Style*/
+#scroll-down {
+	position: fixed;
+	height: 80px;
+    width: 80px;
+    font-size: 25px;
+    z-index: 400;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: rgb(48, 148, 188);
+    box-shadow: 0 14px 59px -7px rgba(0,0,0,0.85);
+    bottom: 5vh;
+    right: 5vw;
+}
+
+#scroll-down:hover {
+	background-color: rgb(81, 183, 224);;
+}
+
+#scroll-down:focus {
+	outline: 0px;	
+}
+
+@media (max-width: 777px) {
+	#scroll-down{
+		height: 40px;
+    	width: 40px;
+    	font-size: 17px;
+		box-shadow: 0 14px 44px -5px rgba(0,0,0,0.85);
+	}    
 }
 
 @media (max-width: 1200px) {
@@ -114,76 +194,10 @@
 	.navbar{
 		min-height: 70px;
 	}
-}
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #3094bc;
-    background-color: #3094bc;
-}
-
-.navbar-default .navbar-nav>li>a {
-    font-family: Roboto;
-	text-transform: uppercase;
-    font-size: 13px;
-	font-weight: 400;
-	letter-spacing: 1.8px;
-	color: white;
-	padding: 20px 30px;
-	width: 93%;
-}
-
-.navbar ul {
-    list-style-type: none; /*to remove bullets*/
-    text-align: center;
-    margin: 0 auto;
-    padding: 0px;
-    border: transparent;
-    display:table;
-    overflow: hidden;
-    width: 100vw;
-    margin-left: 0;
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #f5f800;
-    background-color: transparent;
-}
-
-.navbar {
-    border-radius: 0px;
-}
-/*End Head Style*/
-
-/*Scroll Down Button Style*/
-#scroll-down {
-	position: fixed;
-	height: 80px;
-    width: 80px;
-    font-size: 25px;
-    z-index: 400;
-    border-radius: 50%;
-    border-width: 0px;
-    background-color: rgb(48, 148, 188);
-    box-shadow: 0 14px 59px -7px rgba(0,0,0,0.85);
-    bottom: 5vh;
-    right: 5vw;
-}
-
-#scroll-down:hover {
-	background-color: rgb(81, 183, 224);;
-}
-
-#scroll-down:focus {
-	outline: 0px;	
-}
-
-@media (max-width: 777px) {
-	#scroll-down{
-		height: 40px;
-    	width: 40px;
-    	font-size: 17px;
-		box-shadow: 0 14px 44px -5px rgba(0,0,0,0.85);
-	}    
+	.navbar ul {
+		padding-top: 65px;
+	}
 }
 /*End Scroll Down Button Style*/
 
