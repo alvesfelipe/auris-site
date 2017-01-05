@@ -41,6 +41,10 @@ header {
 		font-size: 35px !important;
 	}
 
+	body a {
+		font-size: 30px !important;
+	}
+
 	#github h4 {
 		font-size: 25px !important;
 	}
@@ -104,6 +108,7 @@ header {
 
 .headers p {
 	font-size: 20px;
+	letter-spacing: 1px;
 	text-align: center;
 	color: rgb(97, 97, 97);
 }
@@ -113,6 +118,7 @@ header {
 .text {
 	font-family: Roboto;
 	border: transparent;
+	letter-spacing: 1px;
 }
 
 .text h4{
@@ -123,6 +129,7 @@ header {
 
 .text p {
 	font-size: 20px;
+	letter-spacing: 1px;
 	color: rgb(97, 97, 97);
 }
 
