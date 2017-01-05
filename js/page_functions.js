@@ -1,12 +1,10 @@
-// $(function(){ 
-//      var navMain = $("#nav-main");
-//      navMain.on("click", "a", null, function () {
-//          navMain.collapse('hide');
-//      });
-//  });
+$('.nav a').on('click', function(){
+    $('.btn-navbar').click(); //bootstrap 2.x
+    $('.navbar-toggle').click() //bootstrap 3.x by Richard
+});
 
 $('#play-presentation').click(function(){
-    video = '<iframe id="video-present" src="https://www.youtube.com/embed/NsOnkL8hog0?autoplay=1&showinfo=0&controls=0"></iframe>';
+    video = '<iframe id="video-present" src="https://www.youtube.com/embed/NsOnkL8hog0?autoplay=1&showinfo=0&controls=0&version=3&loop=1&playlist=NsOnkL8hog0"></iframe>';
     text = '<div id="first-text"><button id="stop-presentation" class="btn btn-default btn-lg btn-block"><i class="fa fa-stop-circle fa-5 iconcolor" aria-hidden="true"></i></button></div>';
     button = '<button></button>'
 
