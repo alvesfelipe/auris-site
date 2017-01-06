@@ -1,12 +1,41 @@
 #partners .row {
-	margin: 0;
-	padding: 10vw;
-	padding-top: 0;
-	padding-bottom: 5vw;
+	float:none;
+  	display:inline-block;
+}
+
+#part {
+	margin: 0 14vw;
+    text-align:center;
+    padding: 5vh 0;
 }
 
 .partner-img {
-	float: left;
-	padding: 2vh;
-	height: auto;
+	margin: 2vw;
+}
+
+#sprite-1 {
+	background: url('../img/auris-sprite.png') no-repeat 0 0;
+	width: 195px;
+	height: 138px;
+}
+
+#sprite-2 {
+	background: url('../img/auris-sprite.png') no-repeat -219px -18px;
+	width: 152px;
+	height: 96px;
+	margin-left: 4vw;
+}
+
+#sprite-3 {
+	background: url('../img/auris-sprite.png') no-repeat -401px -17px;
+	width: 195px;
+	height: 103px;
+	margin-left: 3vw;
+}
+
+#sprite-4 {
+	background: url('../img/auris-sprite.png') no-repeat -656px -7px;
+	width: 75px;
+	height: 125px;
+	margin-left: 7vw;
 }
