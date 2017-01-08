@@ -30,12 +30,75 @@
 	background: url('../img/auris-sprite.png') no-repeat -401px -17px;
 	width: 195px;
 	height: 103px;
-	margin-left: 3vw;
+	margin-left: 0vw;
 }
 
 #sprite-4 {
 	background: url('../img/auris-sprite.png') no-repeat -656px -7px;
 	width: 75px;
 	height: 125px;
-	margin-left: 7vw;
+	margin-left: 10vw;
+}
+
+@media(min-width:576px){
+	#sprite-3 {
+		margin: 2vw;
+	}
+
+	#sprite-4 {
+		margin-left: 10vw;
+	}
+}
+
+@media (min-width: 768px) {
+
+	#partners .row {
+		padding-left: 2vw;
+	}
+
+	#sprite-2 {
+		margin-left: 4vw;
+	}
+
+	#sprite-3 {
+		margin: 2vw;
+	}
+
+	#sprite-4 {
+		margin-left: 7vw;
+	}
+}
+
+@media (min-width: 892px) { 
+	#partners .row {
+		padding-right: 0;
+		padding-left: 2vw;
+	}
+
+   	#sprite-2 {
+   		margin-left: 4vw;
+   	}
+
+   	#sprite-3 {
+   		margin: 2vw;
+   	}
+   	
+   	#sprite-4 {
+   		margin: 2vw;
+   		margin-left: 7vw;
+   	}
+}
+
+@media (min-width: 960px) {
+	#partners .row {
+		padding-left: 2vw;
+	}
+
+	#sprite-4 {
+    	margin: 2vw;
+	}
+
+	#sprite-2 {
+		margin-left: 2vw;
+	}
 }
