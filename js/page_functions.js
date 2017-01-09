@@ -38,8 +38,25 @@ var sections = [($('#home').height() - $('#head').height()),
                 ];
 
 
+// function position(p){
+//     var aux = 0;
+
+//     while(p < sections[aux]){
+//         aux ++;
+//     }
+//     var scroll = $(window).scrollTop();
+//     alert(scroll);
+//     i = aux;
+//     return false;
+// }
+
 $('#scroll-down').click(function () {
-    
+
+    if (i == sections.length - 1) {
+        $('html, body').animate({scrollTop: 0}, 'slow');
+        i = -1;
+    }
+    // alert(i);
     if ((sections[i-1]) != null && sections[i] != null) {
         sec_sum += sections[i];
         $('html, body').animate({scrollTop: sec_sum}, 'slow');
@@ -104,3 +121,16 @@ function contact(id) {
     $('html, body').animate({scrollTop: summ(7)}, 'slow');
     return false;
 }
+
+//button functions
+$(document).ready(function(){
+    $("#scroll-down").delay(1000).show(1000);
+});
+
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+       $('#scroll').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+   } else {
+        $('#scroll').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+   }
+});
