@@ -40,7 +40,11 @@
 	margin-left: 10vw;
 }
 
-@media(min-width:576px){
+@media(min-width: 576px){
+	#partners .row {
+		padding-right: 0;
+	}
+
 	#sprite-3 {
 		margin: 2vw;
 	}
@@ -53,6 +57,7 @@
 @media (min-width: 768px) {
 
 	#partners .row {
+		padding-right: 0;
 		padding-left: 2vw;
 	}
 
@@ -91,7 +96,7 @@
 
 @media (min-width: 960px) {
 	#partners .row {
-		padding-left: 2vw;
+		padding-right: 3vw;
 	}
 
 	#sprite-4 {

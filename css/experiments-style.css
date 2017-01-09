@@ -1,78 +1,105 @@
-#experiments-carousel {
-    margin-top: 7vh;
-    padding-bottom: 10vh;
-    padding-right: 0;
+#experiments {
+    background-color: rgba(97, 97, 97, 0.14);
 }
 
-#experiments .icon {
-    margin-top: 20px;
+#experiments .row {
+    margin: 0 16vw;
 }
 
-/* Carousel Styles */
-.carousel-indicators .active {
-    background-color: #2980b9;
+#experiments .carousel-inner img {
+    position:relative;
+    width: 100%;
+    /*height: 100%;*/
+    height: 350px;
 }
 
-.carousel-inner img {
-    width: 60%;
-    max-height: 460px
+#experiments .image-carousel {
+    height: auto;
+    padding: 15px;
+    background-color: white;
 }
 
-/* Carousel Header Styles */
-.header-text {
+#experiments .text-carousel {
+    height: 400px;
+    padding: 15px;
+    padding-top: 0;
+}
+
+@media (min-width: 400px) {
+    #experiments .carousel-inner img {
+        height: 160px;
+    }
+
+    #experiments .text-carousel {
+        height: 429px;
+    }
+}
+
+
+@media (min-width: 576px) {
+    #experiments .carousel-inner img {
+        height: 260px;
+    }
+
+    #experiments .text-carousel {
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    #experiments .carousel-inner img {
+        height: 350px;
+    }
+
+    #experiments .text-carousel {
+        height: 300px;
+    }
+}
+
+#experiments .text p {
+    font-size: 18px;
+}
+
+#experiments .header-text {
     position: absolute;
     top: 0;
-    left: 60%;
     right: auto;
-    width: 40%;
-    background-color: white;
-    height: auto;
 }
 
-.text-carrousel {
-    border: transparent;
-    padding: 10px
+/*#experiments .carousel-indicators {
+    bottom: 0vh;
+}*/
+
+#experiments .row {
+    padding: 10vh 0;
 }
 
-.text-carrousel p {
-    margin-top: 30px;
-    text-align: left;
-    float: left;
-}
-
-.text-carrousel hr {
-    width: 3vw;
-    border-bottom: 1px solid rgb(171, 152, 122);
-    margin: 0;
-}
-
-.btn-min-block {
+#experiments .btn-min-block {
     min-width: 170px;
     line-height: 26px;
 }
 
-.btn-theme {
+#experiments .btn-theme {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
     margin-right: 15px;
 }
 
-.btn-theme:hover {
+#experiments .btn-theme:hover {
     color: #000;
     background-color: #fff;
     border-color: #fff;
 }
 
 ol, ul {
-    /* margin-top: 0; */
     margin-bottom: -51px;
+}
+
+.carousel-indicators .active {
+    background-color: #2980b9;
 }
 
 .carousel-indicators li {
     border: 1px solid rgb(171, 152, 122);
-}
-
-.carousel .item {
-  height: 350px;
 }
