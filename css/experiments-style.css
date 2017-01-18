@@ -104,3 +104,9 @@ ol, ul {
 .carousel-indicators li {
     border: 1px solid rgb(171, 152, 122);
 }
+
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    #experiments .text-carousel {
+        height: 700px;
+    }
+}
