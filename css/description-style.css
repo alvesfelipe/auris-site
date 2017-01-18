@@ -49,3 +49,33 @@
 	border: transparent;
     z-index: -1;
 }
+
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+	#artefacts .icon img {
+    	width: 300px;
+	}
+
+	#artefacts .icon-artef {
+    	width: 250px !important;
+	    position: absolute;
+	    padding-left: 76px;
+	    padding-right: 27px;
+	    padding-top: 49px;
+    }
+
+    #artefacts #bracelet {
+    	padding-top: 90px;
+	}
+
+	#artefacts #interface {
+		padding-top: 90px;
+	}
+
+	#artefacts .icon {
+		text-align: center;
+	}
+
+	#artefacts{
+		text-align: center;
+	}	
+}
