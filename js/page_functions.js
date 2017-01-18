@@ -1,3 +1,8 @@
+//logo function
+$('body').on('click', '#logo-auris', function(){
+    $('html, body').animate({scrollTop: 0}, 'slow');
+});
+
 // video functions
 $('#play-presentation').click(function(){
     video = '<iframe id="video-present" src="https://www.youtube.com/embed/NsOnkL8hog0?autoplay=1&showinfo=0&controls=0&version=3&loop=1&playlist=NsOnkL8hog0"></iframe>';
@@ -50,6 +55,7 @@ var sections = [($('#home').height() - $('#head').height()),
 //     return false;
 // }
 
+//scroll button functions
 $('#scroll-down').click(function () {
 
     if (i == sections.length - 1) {
@@ -133,4 +139,14 @@ $(window).scroll(function() {
    } else {
         $('#scroll').removeClass('fa-chevron-up').addClass('fa-chevron-down');
    }
+});
+
+//carousel function
+$(document).ready(function() {
+   $("#carousel-experiments, carousel-publications").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#carousel-experiments, carousel-publications").swipeleft(function() {
+      $(this).carousel('next');
+   });
 });
