@@ -108,3 +108,17 @@
 		margin-left: 2vw;
 	}
 }
+
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+	.partner-img {
+    	zoom: 2;
+	}
+
+	#sprite-2 {
+    	margin-left: 4vw;
+	}
+
+	#sprite-4 {
+    	margin-left: 80px;
+	}
+}
