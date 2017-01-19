@@ -31,115 +31,84 @@ $('.nav a').on('click', function() {
 });
 
 var i = 0, sec_sum = 0;
-var sections = [($('#home').height() - $('#head').height()), 
-                ($('#description').height()),
-                ($('#objectives-auris').height()),
-                ($('#experiments').height()),
-                ($('#github').height()),
-                ($('#team').height()),
-                ($('#publications').height()),
-                ($('#partners').height()),
-                ($('#contact').height()),
-                ];
-
-
-// function position(p){
-//     var aux = 0;
-
-//     while(p < sections[aux]){
-//         aux ++;
-//     }
-//     var scroll = $(window).scrollTop();
-//     alert(scroll);
-//     i = aux;
-//     return false;
-// }
 
 //scroll button functions
-$('#scroll-down').click(function () {
 
-    if (i == sections.length - 1) {
-        $('html, body').animate({scrollTop: 0}, 'slow');
-        i = -1;
-    }
-    // alert(i);
-    if ((sections[i-1]) != null && sections[i] != null) {
-        sec_sum += sections[i];
-        $('html, body').animate({scrollTop: sec_sum}, 'slow');
-    }else{
-        sec_sum = sections[i];
-        $('html, body').animate({scrollTop: sections[i]}, 'slow');
-    }
+// jQuery.fn.extend({
+//   scrollTo : function(speed, easing) {
+//     return this.each(function() {
+//       var targetOffset = $(this).offset().top;
+//       $('html,body').animate({scrollTop: targetOffset}, speed, easing);
+//     });
+//   }
+// });
 
-    i++;
+// $('#scroll-down').click(function(e){
+//     e.preventDefault();
+//     var $this = $(this),
+//         $next = $this.parent().next();
+    
+//     $next.scrollTo(400, 'linear');
+// });
+
+$("#scroll-down").click(function() {
+    $('html, body').animate({scrollTop: 0}, 1500);
+});
+
+//navbar buttons functions
+
+$("#projeto").click(function() {
+    $('html, body').animate({scrollTop: $("#description").offset().top - $('#head').height()}, 1500);
     return false;
 });
 
-function summ(i) {
-    var aux = 0;
-    var s = sections[aux];
-    
-    while(aux < i) {
-        aux++;
-        s += sections[aux];
-    }
-
-    return s;
-}
-
-function project(id) {
-    $('html, body').animate({scrollTop: summ(0)}, 'slow');
+$("#objetivos").click(function() {
+    $('html, body').animate({scrollTop: $("#objectives-auris").offset().top - $('#head').height()}, 1500);
     return false;
-}
+});
 
-function objectives(id) {
-    $('html, body').animate({scrollTop: summ(1)}, 'slow');
+$("#experimentos").click(function() {
+    $('html, body').animate({scrollTop: $("#experiments").offset().top - $('#head').height()}, 1500);
     return false;
-}
+});
 
-function experiment(id) {
-
-    $('html, body').animate({scrollTop: summ(2)}, 'slow');
+$("#git").click(function() {
+    $('html, body').animate({scrollTop: $("#github").offset().top - $('#head').height()}, 1500);
     return false;
-}
+});
 
-function git(id) {
-    $('html, body').animate({scrollTop: summ(3)}, 'slow');
+$("#equipe").click(function() {
+    $('html, body').animate({scrollTop: $("#team").offset().top - $('#head').height()}, 1500);
     return false;
-}
+});
 
-function team(id) {
-    $('html, body').animate({scrollTop: summ(4)}, 'slow');
+$("#publicacoes").click(function() {
+    $('html, body').animate({scrollTop: $("#publications").offset().top - $('#head').height()}, 1500);
     return false;
-}
+});
 
-function publications(id) {
-    $('html, body').animate({scrollTop: summ(5)}, 'slow');
+$("#parceiros").click(function() {
+    $('html, body').animate({scrollTop: $("#partners").offset().top - $('#head').height()}, 1500);
     return false;
-}
+});
 
-function partners(id) {
-    $('html, body').animate({scrollTop: summ(6)}, 'slow');
+$("#contato").click(function() {
+    $('html, body').animate({scrollTop: $("#contact").offset().top - $('#head').height()}, 1500);
     return false;
-}
-
-function contact(id) {
-    $('html, body').animate({scrollTop: summ(7)}, 'slow');
-    return false;
-}
+});
 
 //button functions
 $(document).ready(function(){
     $("#scroll-down").delay(1000).show(1000);
 });
 
-$(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-       $('#scroll').removeClass('fa-chevron-down').addClass('fa-chevron-up');
-   } else {
-        $('#scroll').removeClass('fa-chevron-up').addClass('fa-chevron-down');
-   }
-});
+// $(window).scroll(function() {
+//    if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+//        $('#scroll').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+//    } else {
+//         $('#scroll').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+//    }
+// });
 
 //carousel function
 $(document).ready(function() {

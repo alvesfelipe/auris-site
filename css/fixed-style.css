@@ -192,6 +192,7 @@
 	}
 
 	.navbar{
+		top: -2px;
 		min-height: 70px;
 	}
 
